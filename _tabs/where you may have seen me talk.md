@@ -4,10 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
-
-
 * December 2022 - Algebra, Geometry and Topology Seminar, Heriot-Watt University: TBA.<br/>
 * November 2022 - Geometric Group Theory Seminar, University of Oxford: TBA.<br/>
 * November 2022 - Fudan Topology Seminar, Fudan University: TBA.<br/>
