@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 2
+order: 3
 ---
 
 * December 2022 - Algebra, Geometry and Topology Seminar, Heriot-Watt University: TBA.<br/>
