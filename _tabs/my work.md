@@ -1,6 +1,6 @@
 ---
 icon: fas fa-info-circle
-order: 6
+order: 1
 ---
 
 ## Research interests:
