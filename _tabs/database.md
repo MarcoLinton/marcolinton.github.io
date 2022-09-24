@@ -3,7 +3,7 @@ icon: fas fa-info-circle
 order: 5
 ---
 
-I am putting together a database of one-relator groups, you can download a copy from "here":https://warwick.ac.uk/fac/sci/maths/people/staff/linton/database.csv in csv format.
+I am putting together a database of one-relator groups, you can download a copy from [here](https://warwick.ac.uk/fac/sci/maths/people/staff/linton/database.csv) in csv format.
 
 We first fix an alphabet $\Sigma = \{a, b, c, ...\}$ which we will use for our generators. Capital letters $\Sigma$^-1^ $= \{A, B, C, ...\}$ will denote inverse generators and we will endow the set $\Sigma \cup \Sigma$^-1^ with a total order given by 
 
