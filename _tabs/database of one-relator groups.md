@@ -5,7 +5,7 @@ order: 4
 ---
 
 <table>
-  {% for row in site.data.org_database %}
+  {% for row in site._data.org_database %}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
