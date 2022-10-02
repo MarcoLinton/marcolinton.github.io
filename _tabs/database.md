@@ -6,13 +6,11 @@ order: 5
 
 I am putting together a database of one-relator groups, you can download a copy from [here](https://warwick.ac.uk/fac/sci/maths/people/staff/linton/database.csv) in csv format.
 
-We first fix an alphabet $\Sigma = \{a, b, c, ...\}$ which we will use for our generators. Capital letters $\Sigma$^-1^ $= \{A, B, C, ...\}$ will denote inverse generators and we will endow the set $\Sigma \cup \Sigma$^-1^ with a total order given by 
+We first fix an alphabet \(\Sigma = \{a, b, c, ...\}\) which we will use for our generators. Capital letters $\Sigma$^-1^ $= \{A, B, C, ...\}$ will denote inverse generators and we will endow the set $\Sigma \cup \Sigma$^-1^ with a total order given by 
 
-\[
-a < b < c < ... < A < B < C < ...
-\]
+$$ a < b < c < ... < A < B < C < ...$$
 
-We may also define a total order on the set of words over our alphabet (with inverses), known as the shortlex order. We will denote this set by $W(\Sigma)$. Let $w, v\in W(\Sigma)$, then $w < v$ if $|w| < |v|$ or if $|w| = |v|$ and $w[:i] = v[:i]$ but $w[i] < v[i]$. This ordering descends to an ordering on freely reduced words in the free group $F(\Sigma)$. The automorphism group $Aut(F(\Sigma))$ partitions $F(\Sigma)$ into orbits, each with a unique smallest element according to our order.
+We may also define a total order on the set of words over our alphabet (with inverses), known as the shortlex order. We will denote this set by \(W(\Sigma)\). Let $w, v\in W(\Sigma)$, then $w < v$ if $|w| < |v|$ or if $|w| = |v|$ and $w[:i] = v[:i]$ but $w[i] < v[i]$. This ordering descends to an ordering on freely reduced words in the free group $F(\Sigma)$. The automorphism group $Aut(F(\Sigma))$ partitions $F(\Sigma)$ into orbits, each with a unique smallest element according to our order.
 
 
 Let $\langle a, b, ... \vert r(a, b, ...)\rangle$ be a presentation of a one-relator group $G$. For each $\phi\in Aut(F(\Sigma))$, we have that $\langle a, b, ... \vert \phi(r(a, b, ...))\rangle$ is also a presentation for $G$. Hence, given a one-relator presentation, we may obtain a minimal presentation by minimising the length of our relator under the action of $Aut(F(\Sigma))$. It is a well known result (Proposition 5.13 in [LS]) that a one-relator group is freely indecomposable if a minimal presentation has defining relation involving all of the generators. We only include one-relator groups which are freely indecomposable, hence the generators are precisely those that appear in its minimal relator.
