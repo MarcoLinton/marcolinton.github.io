@@ -7,7 +7,9 @@ I am putting together a database of one-relator groups, you can download a copy 
 
 We first fix an alphabet $\Sigma = \{a, b, c, ...\}$ which we will use for our generators. Capital letters $\Sigma$^-1^ $= \{A, B, C, ...\}$ will denote inverse generators and we will endow the set $\Sigma \cup \Sigma$^-1^ with a total order given by 
 
-$$a < b < c < ... < A < B < C < ...$$
+\[
+a < b < c < ... < A < B < C < ...
+\]
 
 We may also define a total order on the set of words over our alphabet (with inverses), known as the shortlex order. We will denote this set by $W(\Sigma)$. Let $w, v\in W(\Sigma)$, then $w < v$ if $|w| < |v|$ or if $|w| = |v|$ and $w[:i] = v[:i]$ but $w[i] < v[i]$. This ordering descends to an ordering on freely reduced words in the free group $F(\Sigma)$. The automorphism group $Aut(F(\Sigma))$ partitions $F(\Sigma)$ into orbits, each with a unique smallest element according to our order.
 
