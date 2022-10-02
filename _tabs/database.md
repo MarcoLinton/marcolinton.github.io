@@ -1,5 +1,6 @@
 ---
 icon: fas fa-info-circle
+use_math: true
 order: 5
 ---
 
