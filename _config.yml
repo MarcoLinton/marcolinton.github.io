@@ -167,6 +167,7 @@ defaults:
       path: assets/js/dist
     values:
       swcache: true
+      mathjax: true
 
 sass:
   style: compressed
