@@ -8,8 +8,8 @@ order: 2
 * November 2022 - Geometric Group Theory Seminar, University of Oxford: TBA.<br/>
 * November 2022 - Fudan Topology Seminar, Fudan University: TBA.<br/>
 * October 2022 - Groups and Geometry in the South East, UCL: TBA.<br/>
-* September 2022 - Modern advances in geometric group theory, University of Manchester:  *Simplfying Gersten's conjecture*.<br/>
-* May 2022 - Pure Postgraduate Seminar, University of Southampton:*Poison subgroups for hyperbolic groups*.<br/>
+* September 2022 - Modern advances in geometric group theory, University of Manchester: *Simplfying Gersten's conjecture*.<br/>
+* May 2022 - Pure Postgraduate Seminar, University of Southampton: *Poison subgroups for hyperbolic groups*.<br/>
 * April 2022 - Geometry and Topology Online, University of Warwick: *Hyperbolicity of certain one-relator groups*.<br/>
 * April 2022 - Algebra Seminar, University of Bristol: *Hyperbolicity of certain one-relator groups*.<br/>
 * April 2022 - New York Group Theory Seminar, City University of New York: *[Hyperbolicity of certain one-relator groups](https://www.youtube.com/watch?v=nyVHuCyzKFE&ab_channel=NYGroupTheory)*.<br/>
