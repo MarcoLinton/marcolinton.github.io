@@ -9,4 +9,4 @@ I am a postdoctoral research associate in geometric group theory at the Universi
 
 Previously, I was at the University of Warwick where I completed my PhD under the supervision of [Saul Schleimer](http://homepages.warwick.ac.uk/~masgar/).
 
-![photo](/img/Website_photo.JPG)
+![photo](/img/Website_photo.jpg)
