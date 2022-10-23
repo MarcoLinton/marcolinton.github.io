@@ -4,7 +4,7 @@ use_math: true
 order: 3
 ---
 
-I am putting together a database of one-relator groups, you can download a copy from [here](https://warwick.ac.uk/fac/sci/maths/people/staff/linton/database.csv) in csv format.
+I am putting together a database of one-relator groups, you can download a copy from [here]([https://raw.githubusercontent.com/MarcoLinton/marcolinton.github.io/main/_data/org_database.csv]) in csv format.
 
 We first fix an alphabet S = {a, b, c, ...} which we will use for our generators. Capital letters S^{-1} = {A, B, C, ...} will denote inverse generators and we will endow the set S U S^{-1} with a total order given by 
 
@@ -25,7 +25,7 @@ The entries for the database are currently:
 |*Abelianisation:*| The abelianisation of the group.|
 |*Small Cancellation:*| True if the presentation is a small cancellation presentation, False otherwise. Small cancellation groups are hyperbolic.|
 |*Centre:*| A generating set for the centre of the group. The algorithm used for computing this is due to Baumslag and Taylor and may be found in [BT]. One-relator groups with non trivial centre are free-by-cyclic and automatic.|
-|*Geometric:*| True if the relator is a geometric word, False if it is not a geometric word and nan if not known. Let <a, b, ... | r(a, b, ...)> be a one-relator group with say n generators. Then r(a, b, ...) is a geometric word if there is a simple closed curve on the boundary of the handlebody of genus n which represents the word. By attaching a 2-handle along this curve we obtain a 3-manifold with boundary whose fundamental group is isomorphic to <a, b, ... | r(a, b, ...)>. This property is preserved in the $Aut(F_n)$ orbit of the given presentation. These entries were computed using John Berge's software _Heegaard_.|
+|*Geometric:*| True if the relator is a geometric word, False if it is not a geometric word and nan if not known. Let <a, b, ... | r(a, b, ...)> be a one-relator group with say n generators. Then r(a, b, ...) is a geometric word if there is a simple closed curve on the boundary of the handlebody of genus n which represents the word. By attaching a 2-handle along this curve we obtain a 3-manifold with boundary whose fundamental group is isomorphic to <a, b, ... | r(a, b, ...)>. This property is preserved in the Aut(F(S)) orbit of the given presentation. These entries were computed using John Berge's software _Heegaard_.|
 |*Manifold, Knot, Link Exterior:*| If the group appears as the fundamental group of a 3-manifold in the snappy census, then the value of this column is the identifier.|
 |*Further Information:*| Any additional information such as other names and properties of the group.|
 |*References:*| A list of references in which the group is mentioned.|
