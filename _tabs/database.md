@@ -10,10 +10,10 @@ We first fix an alphabet S = {a, b, c, ...} which we will use for our generators
 
 a < b < c < ... < A < B < C < ...
 
-We may also define a total order on the set of words over our alphabet (with inverses), known as the shortlex order. We will denote this set by W(S). Let w, v be in W(S), then w < v if |w| < |v| or if |w| = |v| and w[:i] = v[:i] but w[i] < v[i] for some i. This ordering descends to an ordering on freely reduced words in the free group F(S). The automorphism group Aut(F(S)) partitions F(S) into orbits, each with a unique smallest element according to our order.
+We may also define a total order on the set of words over our alphabet (with inverses), known as the shortlex order. We will denote this set by W(S). Let w, v be in W(S), then w < v if '|'w'|' < '|'v'|' or if '|'w'|' = '|'v'|' and w[:i] = v[:i] but w[i] < v[i] for some i. This ordering descends to an ordering on freely reduced words in the free group F(S). The automorphism group Aut(F(S)) partitions F(S) into orbits, each with a unique smallest element according to our order.
 
 
-Let <a, b, ... | r(a, b, ...)> be a presentation of a one-relator group G. For each f in Aut(F(S)), we have that <a, b, ... | f(r(a, b, ...))> is also a presentation for G. Hence, given a one-relator presentation, we may obtain a minimal presentation by minimising the length of our relator under the action of Aut(F(S)). It is a well known result (Proposition 5.13 in [LS]) that a one-relator group is freely indecomposable if a minimal presentation has defining relation involving all of the generators. We only include one-relator groups which are freely indecomposable, hence the generators are precisely those that appear in its minimal relator.
+Let <a, b, ... '|' r(a, b, ...)> be a presentation of a one-relator group G. For each f in Aut(F(S)), we have that <a, b, ... '|' f(r(a, b, ...))> is also a presentation for G. Hence, given a one-relator presentation, we may obtain a minimal presentation by minimising the length of our relator under the action of Aut(F(S)). It is a well known result (Proposition 5.13 in [LS]) that a one-relator group is freely indecomposable if a minimal presentation has defining relation involving all of the generators. We only include one-relator groups which are freely indecomposable, hence the generators are precisely those that appear in its minimal relator.
 
 
 The entries for the database are currently:
@@ -25,14 +25,14 @@ The entries for the database are currently:
 |*Abelianisation:*| The abelianisation of the group.|
 |*Small Cancellation:*| True if the presentation is a small cancellation presentation, False otherwise. Small cancellation groups are hyperbolic.|
 |*Centre:*| A generating set for the centre of the group. The algorithm used for computing this is due to Baumslag and Taylor and may be found in [BT]. One-relator groups with non trivial centre are free-by-cyclic and automatic.|
-|*Geometric:*| True if the relator is a geometric word, False if it is not a geometric word and nan if not known. Let <a, b, ... | r(a, b, ...)> be a one-relator group with say n generators. Then r(a, b, ...) is a geometric word if there is a simple closed curve on the boundary of the handlebody of genus n which represents the word. By attaching a 2-handle along this curve we obtain a 3-manifold with boundary whose fundamental group is isomorphic to <a, b, ... | r(a, b, ...)>. This property is preserved in the Aut(F(S)) orbit of the given presentation. These entries were computed using John Berge's software _Heegaard_.|
+|*Geometric:*| True if the relator is a geometric word, False if it is not a geometric word and nan if not known. Let <a, b, ... '|' r(a, b, ...)> be a one-relator group with say n generators. Then r(a, b, ...) is a geometric word if there is a simple closed curve on the boundary of the handlebody of genus n which represents the word. By attaching a 2-handle along this curve we obtain a 3-manifold with boundary whose fundamental group is isomorphic to <a, b, ... '|' r(a, b, ...)>. This property is preserved in the Aut(F(S)) orbit of the given presentation. These entries were computed using John Berge's software _Heegaard_.|
 |*Manifold, Knot, Link Exterior:*| If the group appears as the fundamental group of a 3-manifold in the snappy census, then the value of this column is the identifier.|
 |*Further Information:*| Any additional information such as other names and properties of the group.|
 |*References:*| A list of references in which the group is mentioned.|
 
 
 
-The database contains all Aut(F(S)) representatives up to length 8 and all Aut(F(S)) representatives where |S| = 2 up to length 14. If you have any suggestions for improving the database or would like to contribute new entries, feel free to drop me an email.
+The database contains all Aut(F(S)) representatives up to length 8 and all Aut(F(S)) representatives where '|'S'|' = 2 up to length 14. If you have any suggestions for improving the database or would like to contribute new entries, feel free to drop me an email.
 
 References:
 
