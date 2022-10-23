@@ -4,7 +4,7 @@ use_math: true
 order: 3
 ---
 
-I am putting together a database of one-relator groups, you can download a copy from [here]([https://raw.githubusercontent.com/MarcoLinton/marcolinton.github.io/main/_data/org_database.csv]) in csv format.
+I am putting together a database of one-relator groups, you can download a copy from [here](https://raw.githubusercontent.com/MarcoLinton/marcolinton.github.io/main/_data/org_database.csv) in csv format.
 
 We first fix an alphabet S = {a, b, c, ...} which we will use for our generators. Capital letters S^{-1} = {A, B, C, ...} will denote inverse generators and we will endow the set S U S^{-1} with a total order given by 
 
