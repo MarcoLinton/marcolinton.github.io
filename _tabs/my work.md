@@ -7,6 +7,10 @@ order: 1
 My general research revolves around the classes of one-relator groups and graphs of free groups. Within this realm, I mainly think about hierarchies, hyperbolicity, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
 
 ## My preprints:
+
+* ### Hyperbolic one-relator groups ([arXiv](https://arxiv.org/abs/2211.04371)).<br/>
+We introduce two families of two-generator one-relator groups called primitive extension groups and show that a one-relator group is hyperbolic if its primitive extension subgroups are hyperbolic. This reduces the problem of characterising hyperbolic one-relator groups to characterising hyperbolic primitive extension groups. These new groups moreover admit explicit decompositions as graphs of free groups with adjoined roots. In order to obtain this result, we characterise $2$-free one-relator groups with exceptional intersection in terms of Christoffel words, show that hyperbolic one-relator groups have quasi-convex Magnus subgroups and build upon the one-relator tower machinery developed in the authors previous article.
+
 * ### One-relator hierarchies ([arXiv](https://arxiv.org/abs/2202.11324)).<br/>
 We prove that one-relator groups with negative immersions are hyperbolic and virtually special; this resolves a recent conjecture of Louder and Wilton. The main new tool we develop is a refinement of the classic Magnus--Moldavanskii hierarchy for one-relator groups. We introduce the notions of stable HNN-extensions and stable hierarchies. We then show that a one-relator group is hyperbolic and has a quasi-convex one-relator hierarchy if and only if it does not contain a Baumslag--Solitar subgroup and has a stable one-relator hierarchy. Finally, we give an algorithm that, given as input a one-relator group, verifies if it has a stable hierarchy and, if so, determines whether or not it contains a Baumslag--Solitar subgroup.<br/>
 
