@@ -4,9 +4,12 @@ order: 1
 ---
 
 ## Research interests:
-My general research revolves around the classes of one-relator groups and graphs of free groups. Within this realm, I mainly think about hierarchies, hyperbolicity, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
+My general research revolves around low-dimensional groups. I am particularly interested in one-relator groups, free-by-cyclic groups and graphs of free groups. Within these classes I mainly think about hierarchies, hyperbolicity, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
 
 ## My preprints:
+
+* ### Virtually free-by-cyclic groups ([arXiv](https://arxiv.org/abs/2302.11500)).<br/>
+We obtain a homological characterisation of virtually free-by-cyclic groups among groups that are hyperbolic and virtually compact special. As a consequence, we show that many groups known to be coherent actually possess the stronger property of being virtually free-by-cyclic. In particular, we show that all one-relator groups with torsion are virtually free-by-cyclic, solving a conjecture of Baumslag.
 
 * ### Hyperbolic one-relator groups ([arXiv](https://arxiv.org/abs/2211.04371)).<br/>
 We introduce two families of two-generator one-relator groups called primitive extension groups and show that a one-relator group is hyperbolic if its primitive extension subgroups are hyperbolic. This reduces the problem of characterising hyperbolic one-relator groups to characterising hyperbolic primitive extension groups. These new groups moreover admit explicit decompositions as graphs of free groups with adjoined roots. In order to obtain this result, we characterise $2$-free one-relator groups with exceptional intersection in terms of Christoffel words, show that hyperbolic one-relator groups have quasi-convex Magnus subgroups and build upon the one-relator tower machinery developed in the authors previous article.
