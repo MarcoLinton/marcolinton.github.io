@@ -8,6 +8,9 @@ My general research revolves around low-dimensional groups. I am particularly in
 
 ## My preprints:
 
+* ### One-relator groups are coherent ([pdf](https://github.com/MarcoLinton/marcolinton.github.io/blob/e0e4e499c365c5f7dfcf7b3f150f8bb05b614445/_data/Coherence_of_one-relator_groups.pdf))
+Building on a recent breakthrough of Jaikin-Zapirain, we show that all one-relator groups are coherent.
+
 * ### Virtually free-by-cyclic groups ([arXiv](https://arxiv.org/abs/2302.11500)).<br/>
 We obtain a homological characterisation of virtually free-by-cyclic groups among groups that are hyperbolic and virtually compact special. As a consequence, we show that many groups known to be coherent actually possess the stronger property of being virtually free-by-cyclic. In particular, we show that all one-relator groups with torsion are virtually free-by-cyclic, solving a conjecture of Baumslag.
 
