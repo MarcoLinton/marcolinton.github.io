@@ -6,9 +6,9 @@ order: 1
 ## Research interests:
 My general research revolves around low-dimensional groups. I am particularly interested in one-relator groups, free-by-cyclic groups and graphs of free groups. Within these classes I mainly think about hierarchies, hyperbolicity, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
 
-## My preprints:
+## My articles:
 
-* ### One-relator groups are coherent ([pdf](https://github.com/MarcoLinton/marcolinton.github.io/blob/e0e4e499c365c5f7dfcf7b3f150f8bb05b614445/_data/Coherence_of_one-relator_groups.pdf))
+* ### One-relator groups are coherent ([arXiv](https://arxiv.org/abs/2303.05976))
 Building on a recent breakthrough of Jaikin-Zapirain, we show that all one-relator groups are coherent.
 
 * ### Virtually free-by-cyclic groups (with Dawid Kielak) ([arXiv](https://arxiv.org/abs/2302.11500)).<br/>
