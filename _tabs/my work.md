@@ -8,6 +8,10 @@ My general research revolves around low-dimensional groups. I am particularly in
 
 ## My articles:
 
+* ### The Atiyah conjecture for three-manifold groups (with [Dawid Kielak](https://people.maths.ox.ac.uk/kielak/))([arXiv](https://arxiv.org/abs/2303.15907))
+We show that finitely generated fundamental groups of three-manifolds satisfy the Strong Atiyah Conjecture over the complex numbers. This implies that when the group is additionally torsion-free, then its complex group ring satisfies the Kaplansky Zero-divisor Conjecture.
+As an application, we give a very short proof of a significant generalisation of a recent result of Shalen dealing with the minimal index of freedom of three-manifold groups.
+
 * ### One-relator groups are coherent ([arXiv](https://arxiv.org/abs/2303.05976), [Alexander Engel's blog](https://blog.spp2026.de/coherence-of-one-relator-groups/))
 Building on a recent breakthrough of Jaikin-Zapirain, we show that all one-relator groups are coherent.
 
