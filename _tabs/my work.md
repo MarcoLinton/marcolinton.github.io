@@ -24,7 +24,7 @@ We introduce two families of two-generator one-relator groups called primitive e
 * ### One-relator hierarchies ([arXiv](https://arxiv.org/abs/2202.11324), [Alexander Engel's blog](https://blog.spp2026.de/hyperbolicity-of-one-relator-groups/)).<br/>
 We prove that one-relator groups with negative immersions are hyperbolic and virtually special; this resolves a recent conjecture of Louder and Wilton. The main new tool we develop is a refinement of the classic Magnus--Moldavanskii hierarchy for one-relator groups. We introduce the notions of stable HNN-extensions and stable hierarchies. We then show that a one-relator group is hyperbolic and has a quasi-convex one-relator hierarchy if and only if it does not contain a Baumslag--Solitar subgroup and has a stable one-relator hierarchy. Finally, we give an algorithm that, given as input a one-relator group, verifies if it has a stable hierarchy and, if so, determines whether or not it contains a Baumslag--Solitar subgroup.<br/>
 
-* ### The fully compressed subgroup membership problem ([arXiv](https://arxiv.org/abs/2110.10055)).<br/>
+* ### The fully compressed subgroup membership problem ([arXiv](https://arxiv.org/abs/2110.10055), to appear in Journal of Algebra).<br/>
 Suppose that $F$ is a free group and $k$ is a natural number. We show that the fully compressed membership problem for $k$-generated subgroups of $F$ is solvable in polynomial time. In order to do this, we adapt the theory of Stallings' foldings to handle edges with compressed labels. This partially answers a question of Markus Lohrey.<br/>
 
 * ### On the intersections of finitely generated subgroups of free groups: reduced rank to full rank ([arXiv](https://arxiv.org/abs/2108.10814)).<br/>
