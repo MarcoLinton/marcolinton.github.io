@@ -4,7 +4,7 @@ order: 1
 ---
 
 ## Research interests:
-My general research revolves around low-dimensional groups. I am particularly interested in one-relator groups, free-by-cyclic groups and graphs of free groups. Within these classes I mainly think about hierarchies, hyperbolicity, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
+My general research revolves around low-dimensional groups. I am particularly interested in one-relator groups, free-by-cyclic groups and graphs of free groups. Within these classes I mainly think about hyperbolicity, coherence, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
 
 ## My articles:
 
