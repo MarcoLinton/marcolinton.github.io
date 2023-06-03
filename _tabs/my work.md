@@ -63,6 +63,3 @@ We prove that one-relator groups are coherent, solving a well-known problem of G
   </summary> 
     We show that the number of conjugacy classes of intersections $A\cap B^g$, for fixed finitely generated subgroups $A, B<F$ of a free group, is bounded above in terms of the ranks of $A$ and $B$; this confirms an intuition of Walter Neumann. This result was previously known only in the case where $A$ or $B$ is cyclic by the $w$-cycles theorem of Helfer and Wise and, independently, Louder and Wilton. In order to prove our main theorem, we introduce new results regarding the structure of fibre products of finite graphs. We work with a generalised definition of graph immersions so that our results apply to the theory of regular languages. For example, we give a new algorithm to decide non-emptiness of the intersection of two regular languages.
 </details>
-
-## A database:
-I am putting together a database of one-relator groups. More information can be found [here](https://marcolinton.github.io/database/).
