@@ -1,14 +1,5 @@
----
-icon: fas fa-info-circle
-order: 1
----
 
-## Research interests:
-My general research revolves around low-dimensional groups. I am particularly interested in one-relator groups, free-by-cyclic groups and graphs of free groups. Within these classes I mainly think about hyperbolicity, coherence, the conjugacy problem and the efficiency of the word problem. I am also interested in compression and its applications to computational questions in groups.
-
-## My articles:
-
-<details><summary><span><h3>The Atiyah conjecture for three-manifold groups</h3> (with</span><span><a href="https://people.maths.ox.ac.uk/kielak/"> Dawid Kielak</a></span><span>) (</span><span><a href="https://arxiv.org/abs/2303.15907">arXiv</a><span><span>)</span></summary>We show that finitely generated fundamental groups of three-manifolds satisfy the Strong Atiyah Conjecture over the complex numbers. This implies that when the group is additionally torsion-free, then its complex group ring satisfies the Kaplansky Zero-divisor Conjecture. As an application, we give a very short proof of a significant generalisation of a recent result of Shalen dealing with the minimal index of freedom of three-manifold groupss.</details>
+<details><summary><span><h3>The Atiyah conjecture for three-manifold groups</h3> (with</span><span><a href="https://people.maths.ox.ac.uk/kielak/"> Dawid Kielak</a></span><span>) (</span><span><a href="https://arxiv.org/abs/2303.15907">arXiv</a><span><span>)</span></summary>We show that finitely generated fundamental groups of three-manifolds satisfy the Strong Atiyah Conjecture over the complex numbers. This implies that when the group is additionally torsion-free, then its complex group ring satisfies the Kaplansky Zero-divisor Conjecture. As an application, we give a very short proof of a significant generalisation of a recent result of Shalen dealing with the minimal index of freedom of three-manifold groups.</details>
 
 
 <details>
