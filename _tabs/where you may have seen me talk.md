@@ -4,6 +4,9 @@ icon: fas fa-info-circle
 order: 2
 ---
 
+* May 2023 - Geometry of subgroups, Centre de recherches mathématiques: *The coherence of one-relator groups*.<br/>
+* May 2023 - One-day special NYGT event in memory of Gilbert Baumslag and Benjamin Fine, City University of New York: *One-relator groups virtually free-by-cyclic groups and coherence*.<br/>
+* March 2023 - Geometry and Analysis on Groups Research Seminar, University of Vienna: *Virtually free-by-cyclic groups*.<br/>
 * December 2022 - Algebra, Geometry and Topology Seminar, Heriot-Watt University: TBA.<br/>
 * November 2022 - Geometric Group Theory Seminar, University of Oxford: TBA.<br/>
 * November 2022 - Fudan Topology Seminar, Fudan University: TBA.<br/>
