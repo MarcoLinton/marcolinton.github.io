@@ -11,7 +11,7 @@ Previously, I was a postdoctoral research associate in geometric group theory at
 
 Even more previously, I was at the University of Warwick where I completed my PhD under the supervision of [Saul Schleimer](https://sschleimer.warwick.ac.uk/).
 
-![photo](/docs/Website_photo.jpg)
+![photo](/img/Website_photo.jpg)
 
 # Contact me
 
