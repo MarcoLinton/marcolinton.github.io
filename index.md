@@ -9,7 +9,7 @@ I am currently a Severo Ochoa Postdoctoral Research Associate at the Instituto d
 
 Previously, I was a postdoctoral research associate in geometric group theory at the University of Oxford, working in [Dawid Kielak's](https://people.maths.ox.ac.uk/kielak/) team.
 
-Even more previously, I was at the University of Warwick where I completed my PhD under the supervision of [Saul Schleimer](http://homepages.warwick.ac.uk/~masgar/).
+Even more previously, I was at the University of Warwick where I completed my PhD under the supervision of [Saul Schleimer](https://sschleimer.warwick.ac.uk/).
 
 ![photo](/img/Website_photo.jpg)
 
