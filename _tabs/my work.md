@@ -21,7 +21,7 @@ My general research revolves around low-dimensional groups. I am particularly in
 
 7) Hyperbolic one-relator groups ([arXiv](https://arxiv.org/abs/2211.04371), [Canad. J. Math.](https://doi.org/10.4153/S0008414X24000427)).
 
-8) One-relator hierarchies ([arXiv](https://arxiv.org/abs/2202.11324), [Alexander Engel's blog](https://blog.spp2026.de/hyperbolicity-of-one-relator-groups/), to appear in Duke Math. J.).
+8) One-relator hierarchies ([arXiv](https://arxiv.org/abs/2202.11324), [Alexander Engel's blog](https://blog.spp2026.de/hyperbolicity-of-one-relator-groups/), Published in [Duke Math. J.](https://projecteuclid.org/journals/duke-mathematical-journal/volume-174/issue-4/One-relator-hierarchies/10.1215/00127094-2024-0040.short)).
    
 9) The fully compressed subgroup membership problem ([arXiv](https://arxiv.org/abs/2110.10055), Published in [Journal of Algebra](https://www.sciencedirect.com/science/article/pii/S0021869323001382)).
 
