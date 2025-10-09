@@ -22,7 +22,7 @@ My general research revolves around low-dimensional groups. I am particularly in
 
 1) Residually rationally solvable one-relator groups, ([arXiv](https://arxiv.org/abs/2407.09272), Published in [Bull. Lond. Math. Soc.](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.70210)).
 
-2) Group rings of three-manifold groups (with [Dawid Kielak](https://people.maths.ox.ac.uk/kielak/), [arXiv](https://arxiv.org/abs/2303.15907), Published in [Proc. Amer. Math. Soc.](https://doi.org/10.1090/proc/16716)).
+2) Group rings of three-manifold groups (with [Dawid Kielak](https://people.maths.ox.ac.uk/kielak/), [arXiv](https://arxiv.org/abs/2303.15907), Published in [Proc. Amer. Math. Soc.](https://www.ams.org/journals/proc/2024-152-05/S0002-9939-2024-16716-2/)).
 
 3) On the coherence of one-relator groups and their group algebras (with [Andrei Jaikin-Zapirain](https://matematicas.uam.es/~andrei.jaikin/), [arXiv](https://arxiv.org/abs/2303.05976), [Alexander Engel's blog](https://blog.spp2026.de/coherence-of-one-relator-groups/), Published in [Ann. of Math.](https://annals.math.princeton.edu/2025/201-3/p04)).
 
