@@ -8,6 +8,8 @@ My general research revolves around low-dimensional groups. I am particularly in
 
 ## Preprints: 
 
+1) Group pairs, coherence and Farrell--Jones Conjecture for $K_0$, (with [Andrei Jaikin-Zapirain](https://andreijaikin.wordpress.com/), [Pablo Sánchez-Peralta](https://www.pablosanchez-peralta.xyz/), [arXiv](https://arxiv.org/abs/2510.23518), 2025).
+
 1) Embedding finitely generated free-by-cyclic groups in {finitely generated free}-by-cyclic groups, ([arXiv](https://arxiv.org/abs/2510.10178), 2025).
 
 2) The geometry of subgroups of mapping tori of free groups, ([arXiv](https://arxiv.org/abs/2510.03145), 2025).
