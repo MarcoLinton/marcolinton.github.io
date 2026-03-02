@@ -12,19 +12,19 @@ My general research revolves around low-dimensional groups. I am particularly in
 
 2) Group pairs, coherence and Farrell--Jones Conjecture for $K_0$, (with [Andrei Jaikin-Zapirain](https://andreijaikin.wordpress.com/), [Pablo Sánchez-Peralta](https://www.pablosanchez-peralta.xyz/), [arXiv](https://arxiv.org/abs/2510.23518), 2025).
 
-3) Embedding finitely generated free-by-cyclic groups in {finitely generated free}-by-cyclic groups, ([arXiv](https://arxiv.org/abs/2510.10178), 2025).
-
-4) The geometry of subgroups of mapping tori of free groups, ([arXiv](https://arxiv.org/abs/2510.03145), 2025).
+3) The geometry of subgroups of mapping tori of free groups, ([arXiv](https://arxiv.org/abs/2510.03145), 2025).
    
-5) Pullbacks and intersections in categories of graphs of groups, (with [Jordi Delgado](https://jdrmaths.wixsite.com/jdelgado), [Jone Lopez de Gamiz Zearra](https://sites.google.com/view/joneldg/inicio), [Mallika Roy](https://sites.google.com/view/mallika-roy/home), [Pascal Weil](https://lipn.univ-paris13.fr/~pascal.weil/), [arXiv](https://arxiv.org/abs/2508.04362), 2025).
+4) Pullbacks and intersections in categories of graphs of groups, (with [Jordi Delgado](https://jdrmaths.wixsite.com/jdelgado), [Jone Lopez de Gamiz Zearra](https://sites.google.com/view/joneldg/inicio), [Mallika Roy](https://sites.google.com/view/mallika-roy/home), [Pascal Weil](https://lipn.univ-paris13.fr/~pascal.weil/), [arXiv](https://arxiv.org/abs/2508.04362), 2025).
 
-6) The theory of one-relator groups: history and recent progress, (with [Carl-Fredrik Nyberg-Brodda](https://sites.google.com/view/cf-nb/), [arXiv](https://arxiv.org/abs/2501.18306), 2025).
+5) The theory of one-relator groups: history and recent progress, (with [Carl-Fredrik Nyberg-Brodda](https://sites.google.com/view/cf-nb/), [arXiv](https://arxiv.org/abs/2501.18306), 2025).
    
-7) Lifting relations in right orderable groups, ([arXiv](https://arxiv.org/abs/2412.17057), 2024).
+6) Lifting relations in right orderable groups, ([arXiv](https://arxiv.org/abs/2412.17057), 2024).
 
-8) On the intersections of finitely generated subgroups of free groups: reduced rank to full rank ([arXiv](https://arxiv.org/abs/2108.10814), 2021).
+7) On the intersections of finitely generated subgroups of free groups: reduced rank to full rank ([arXiv](https://arxiv.org/abs/2108.10814), 2021).
 
 ## Publications:
+
+8) Embedding finitely generated free-by-cyclic groups in {finitely generated free}-by-cyclic groups, ([arXiv](https://arxiv.org/abs/2510.10178), Published in [Int. Math. Res. Not.](https://doi.org/10.1093/imrn/rnag020), 2026).
 
 9) Residually rationally solvable one-relator groups, ([arXiv](https://arxiv.org/abs/2407.09272), Published in [Bull. Lond. Math. Soc.](https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.70210), 2025).
 
