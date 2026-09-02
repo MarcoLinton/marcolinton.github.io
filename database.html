@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Database of One-relator Groups — Marco Linton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" defer></script>
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --paper-dim:#F3F0E8;
+    --ink:#1B1B18;
+    --ink-soft:#4A473F;
+    --rule:#DAD3C0;
+    --indigo:#26415E;
+    --indigo-soft:#5A7796;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 28px;}
+
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(251,250,247,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--rule);
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;}
+  nav a{color:var(--ink-soft);text-decoration:none;font-size:14px;}
+  nav a:hover{color:var(--indigo);}
+  nav .brand{font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:var(--ink);}
+
+  header.hero{padding:56px 0 8px;}
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:36px;
+    line-height:1.12;
+    margin:0 0 10px;
+    letter-spacing:-0.01em;
+  }
+  .subtitle{color:var(--ink-soft);font-size:15.5px;margin:0 0 8px;max-width:60ch;}
+
+  main{padding-bottom:60px;}
+  section{padding:30px 0;border-top:1px solid var(--rule);}
+  section:first-of-type{border-top:none;}
+  h2{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:20px;
+    margin:0 0 14px;
+    color:var(--ink);
+  }
+  p{margin:0 0 14px;max-width:64ch;}
+  a{color:var(--indigo);text-decoration-color:var(--rule);}
+  a:hover{text-decoration-color:var(--indigo-soft);}
+
+  .download{
+    display:inline-block;font-size:14px;color:var(--indigo-soft);
+    border:1px solid var(--rule);border-radius:4px;padding:8px 14px;
+    text-decoration:none;margin-top:4px;
+  }
+  .download:hover{color:var(--indigo);border-color:var(--indigo-soft);}
+
+  dl.entries{margin:0;max-width:66ch;}
+  dl.entries dt{
+    font-family:'Fraunces',serif;font-weight:500;font-size:15.5px;color:var(--ink);
+    margin-top:18px;
+  }
+  dl.entries dt:first-child{margin-top:0;}
+  dl.entries dd{margin:4px 0 0;padding:0 0 16px;border-bottom:1px dashed var(--rule);color:var(--ink-soft);font-size:14.5px;}
+  dl.entries dd:last-child{border-bottom:none;}
+
+  .coverage{font-size:14.5px;color:var(--ink-soft);background:var(--paper-dim);border:1px solid var(--rule);border-radius:4px;padding:14px 16px;max-width:64ch;}
+
+  ol.refs{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink-soft);}
+  ol.refs li{padding:6px 0;}
+
+  footer{padding:30px 0 60px;font-size:13px;color:var(--ink-soft);border-top:1px solid var(--rule);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="option1-ink-paper.html#other-work">← Marco Linton</a>
+    <span class="brand">Database</span>
+  </div>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <h1>A Database of One-relator Groups</h1>
+  </header>
+
+  <section id="intro">
+    <p>I put together a database of one-relator groups during my PhD. You can download a copy in CSV format below.</p>
+    <a class="download" href="https://warwick.ac.uk/fac/sci/maths/people/staff/linton/database.csv" target="_blank" rel="noopener">Download database.csv</a>
+  </section>
+
+  <section id="coverage">
+    <p class="coverage">This database contains all $\mathrm{Aut}(F(\Sigma))$ representatives up to length 8, and all $\mathrm{Aut}(F(\Sigma))$ representatives where $|\Sigma| = 2$ up to length 14. If you have any suggestions for improving the database, or would like to contribute new entries, feel free to drop me an email.</p>
+  </section>
+
+  <section id="setup">
+    <h2>Setup</h2>
+    <p>We first fix an alphabet $\Sigma = \{a, b, c, ...\}$ which we will use for our generators. Capital letters $\Sigma^{-1} = \{A, B, C, ...\}$ will denote inverse generators and we will endow the set $\Sigma \cup \Sigma^{-1}$ with a total order given by</p>
+    <p>$$a < b < c < ... < A < B < C < ...$$</p>
+    <p>We may also define a total order on the set of words over our alphabet (with inverses), known as the shortlex order. We will denote this set by $W(\Sigma)$. Let $w, v \in W(\Sigma)$, then $w < v$ if $|w| < |v|$, or if $|w| = |v|$ and $w[{:}i] = v[{:}i]$ but $w[i] < v[i]$. This ordering descends to an ordering on freely reduced words in the free group $F(\Sigma)$. The automorphism group $\mathrm{Aut}(F(\Sigma))$ partitions $F(\Sigma)$ into orbits, each with a unique smallest element according to our order.</p>
+    <p>Let $\langle a, b, ... \mid r(a, b, ...)\rangle$ be a presentation of a one-relator group $G$. For each $\phi \in \mathrm{Aut}(F(\Sigma))$, we have that $\langle a, b, ... \mid \phi(r(a, b, ...))\rangle$ is also a presentation for $G$. Hence, given a one-relator presentation, we may obtain a minimal presentation by minimising the length of our relator under the action of $\mathrm{Aut}(F(\Sigma))$. It is well known (Proposition 5.13 in [LS]) that a one-relator group is freely indecomposable if a minimal presentation has defining relation involving all of the generators. We only include one-relator groups which are freely indecomposable, hence the generators are precisely those that appear in its minimal relator.</p>
+  </section>
+
+  <section id="columns">
+    <h2>The entries</h2>
+    <dl class="entries">
+      <dt>Relator</dt>
+      <dd>Minimal relator under the action of $\mathrm{Aut}(F(\Sigma))$ defining the group.</dd>
+
+      <dt>Name</dt>
+      <dd>The name of the group.</dd>
+
+      <dt>Number of Generators</dt>
+      <dd>The number of generators.</dd>
+
+      <dt>Torsion</dt>
+      <dd>False if the group is torsion free, the root of the relator if it has torsion. If the group has torsion then its relator is a proper power and all torsion is conjugate into the subgroup generated by the root of the relator. One-relator groups with torsion are hyperbolic.</dd>
+
+      <dt>Abelianisation</dt>
+      <dd>The abelianisation of the group.</dd>
+
+      <dt>Small Cancellation</dt>
+      <dd>True if the presentation is a small cancellation presentation, False otherwise. Small cancellation groups are hyperbolic.</dd>
+
+      <dt>Centre</dt>
+      <dd>A generating set for the centre of the group. The algorithm used for computing this is due to Baumslag and Taylor and may be found in [BT]. One-relator groups with non-trivial centre are free-by-cyclic and automatic.</dd>
+
+      <dt>Geometric</dt>
+      <dd>True if the relator is a geometric word, False if it is not a geometric word, and nan if not known. Let $\langle a, b, ... \mid r(a, b, ...)\rangle$ be a one-relator group with, say, $n$ generators. Then $r(a, b, ...)$ is a geometric word if there is a simple closed curve on the boundary of the handlebody of genus $n$ which represents the word. By attaching a 2-handle along this curve we obtain a 3-manifold with boundary whose fundamental group is isomorphic to $\langle a, b, ... \mid r(a, b, ...)\rangle$. This property is preserved in the $\mathrm{Aut}(F_n)$ orbit of the given presentation. These entries were computed using John Berge's software <em>Heegaard</em>.</dd>
+
+      <dt>Manifold, Knot, Link Exterior</dt>
+      <dd>If the group appears as the fundamental group of a 3-manifold in the SnapPy census, then the value of this column is the identifier.</dd>
+
+      <dt>Further Information</dt>
+      <dd>Any additional information such as other names and properties of the group.</dd>
+
+      <dt>References</dt>
+      <dd>A list of references in which the group is mentioned.</dd>
+    </dl>
+  </section>
+
+  <section id="references">
+    <h2>References</h2>
+    <ol class="refs">
+      <li>[BT] G. Baumslag, T. Taylor. <em>The Centre of Groups with One Defining Relator</em>. Math. Annalen 175, 315–319 (1968).</li>
+      <li>[LS] R. C. Lyndon, P. E. Schupp. <em>Combinatorial Group Theory</em>. Springer-Verlag, 2000.</li>
+    </ol>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Marco Linton — <a href="option1-ink-paper.html">back to marcolinton.github.io</a></div>
+</footer>
+
+</body>
+</html>

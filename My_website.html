@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco Linton</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --paper-dim:#F3F0E8;
+    --ink:#1B1B18;
+    --ink-soft:#4A473F;
+    --rule:#DAD3C0;
+    --indigo:#26415E;
+    --indigo-soft:#5A7796;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:700px;margin:0 auto;padding:0 28px;}
+
+  /* Nav */
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(251,250,247,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--rule);
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px;}
+  nav .brand{font-family:'Fraunces',serif;font-weight:500;font-size:17px;color:var(--ink);text-decoration:none;}
+  nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;}
+  nav a{color:var(--ink-soft);text-decoration:none;font-size:14px;}
+  nav a:hover{color:var(--indigo);}
+
+  /* Hero */
+  header.hero{padding:64px 0 40px;}
+  .hero-row{display:flex;gap:36px;align-items:flex-start;}
+  .hero-text{flex:1;min-width:0;}
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:44px;
+    line-height:1.08;
+    margin:0 0 8px;
+    letter-spacing:-0.01em;
+  }
+  .role{font-size:17px;color:var(--ink-soft);margin:0 0 22px;max-width:46ch;}
+  .role a{color:var(--indigo);}
+  .photo{
+    width:132px;height:132px;flex:none;border-radius:6px;overflow:hidden;
+    border:1px solid var(--rule);
+    background:var(--paper-dim);
+  }
+  .photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .bio p{margin:0 0 14px;max-width:64ch;color:var(--ink);}
+  .bio a{color:var(--indigo);text-decoration-color:var(--rule);}
+  .bio em.thesis{color:var(--ink-soft);font-style:italic;}
+
+  .links-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;font-size:14px;}
+  .links-row a{color:var(--indigo-soft);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px;}
+  .links-row a:hover{color:var(--indigo);border-color:var(--indigo-soft);}
+
+  /* decorative graph motif */
+  .motif{position:absolute;right:0;top:8px;opacity:0.9;pointer-events:none;}
+
+  /* Sections */
+  section{padding:38px 0;border-top:1px solid var(--rule);}
+  section:first-of-type{border-top:none;}
+  h2{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:23px;
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  .lede{color:var(--ink-soft);font-size:15px;margin:-8px 0 22px;max-width:60ch;}
+
+  .interests{font-size:15.5px;color:var(--ink);max-width:62ch;}
+  .interests .sep{color:var(--rule);margin:0 6px;}
+
+  /* Publication list */
+  .pub-list{list-style:decimal;margin:0;padding:0 0 0 1.3em;}
+  .pub-list li::marker{color:var(--ink-soft);font-size:13px;font-variant-numeric:tabular-nums;}
+  .pub-list li{padding:14px 0;border-bottom:1px dashed var(--rule);}
+  .pub-list li:last-child{border-bottom:none;}
+  .pub-title{font-size:15.5px;color:var(--ink);font-weight:500;}
+  .pub-title a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);}
+  .pub-title a:hover{color:var(--indigo);border-color:var(--indigo-soft);}
+  .pub-meta{font-size:13.5px;color:var(--ink-soft);margin-top:3px;}
+  .pub-meta .tag{
+    display:inline-block;font-size:11px;letter-spacing:0.02em;color:var(--indigo);
+    border:1px solid var(--indigo-soft);border-radius:3px;padding:1px 6px;margin-right:8px;
+    vertical-align:middle;
+  }
+
+  details.more{margin-top:14px;}
+  details.more summary{
+    cursor:pointer;font-size:14px;color:var(--indigo);list-style:none;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  details.more summary::-webkit-details-marker{display:none;}
+  details.more summary::before{content:"+";font-family:'Fraunces',serif;font-size:16px;}
+  details.more[open] summary::before{content:"–";}
+
+  /* Talks */
+  .talk-list{margin:0;padding:0;}
+  .talk{display:flex;gap:16px;padding:10px 0;border-bottom:1px dashed var(--rule);font-size:14.5px;}
+  .talk:last-child{border-bottom:none;}
+  .talk .when{flex:none;width:82px;color:var(--ink-soft);font-size:13px;padding-top:2px;}
+  .talk .what strong{font-weight:600;}
+  .talk .what span{color:var(--ink-soft);}
+
+  /* Timeline (positions) */
+  .timeline{margin:0;padding:0;list-style:none;}
+  .timeline li{position:relative;padding:0 0 18px 22px;border-left:1px solid var(--rule);}
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{
+    content:"";position:absolute;left:-5px;top:4px;width:9px;height:9px;border-radius:50%;
+    background:var(--paper);border:2px solid var(--indigo-soft);
+  }
+  .timeline li.current::before{background:var(--indigo);border-color:var(--indigo);}
+  .timeline .yr{font-size:12.5px;color:var(--ink-soft);}
+  .timeline .role{font-size:15px;color:var(--ink);margin:0;}
+
+  /* Photo grids */
+  .photo-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(150px,1fr));gap:10px;margin:22px 0 6px;}
+  .photo-grid a{display:block;aspect-ratio:4/3;overflow:hidden;border-radius:4px;border:1px solid var(--rule);}
+  .photo-grid img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo-note{font-size:13px;color:var(--ink-soft);margin:0 0 4px;}
+
+  .two-col{display:flex;gap:36px;flex-wrap:wrap;}
+  .two-col > div{flex:1;min-width:220px;}
+
+  address{font-style:normal;font-size:14.5px;color:var(--ink-soft);line-height:1.7;}
+  address a{color:var(--indigo);}
+
+  footer{padding:30px 0 60px;font-size:13px;color:var(--ink-soft);}
+
+  @media (max-width:560px){
+    header.hero{padding:44px 0 30px;}
+    h1{font-size:34px;}
+    .hero-row{flex-direction:column-reverse;gap:18px;}
+    .photo{width:96px;height:96px;}
+    nav .wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    nav ul{gap:14px;flex:none;white-space:nowrap;}
+    nav a{font-size:13px;}
+    .photo-grid{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Marco Linton</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#other-work">Other work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#more">More</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="top"></div>
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-row">
+      <div class="hero-text">
+        <h1>Marco Linton</h1>
+        <p class="role">Severo Ochoa Postdoctoral Research Associate at the <a href="https://www.icmat.es/" target="_blank" rel="noopener">Instituto de Ciencias Matemáticas</a> (ICMAT), Madrid.</p>
+      </div>
+      <div class="photo">
+        <img src="images/main.jpg" alt="Photo of Marco Linton">
+      </div>
+    </div>
+    <div class="links-row">
+      <a href="mailto:marco.linton@icmat.es">marco.linton@icmat.es</a>
+      <a href="https://arxiv.org/a/linton_m_1" target="_blank" rel="noopener">arXiv author page</a>
+      <a href="https://scholar.google.com/citations?user=deUy_rcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="Academic_cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <div class="bio">
+      <p>I work in geometric group theory, mostly at the interface between infinite group theory, homological algebra and low-dimensional topology. I am primarily interested coherence, splittings and group (co)homology usually with applications to one-relator groups, hyperbolic groups, free-by-cyclic groups and 3-manifold groups.</p>
+      <p>Before Madrid, I was a postdoctoral researcher at the University of Oxford in <a href="https://people.maths.ox.ac.uk/kielak/" target="_blank" rel="noopener">Dawid Kielak's</a> group (2022–2024). I completed my PhD at the University of Warwick in 2022, supervised by <a href="https://sschleimer.warwick.ac.uk/" target="_blank" rel="noopener">Saul Schleimer</a>, on <em class="thesis">One-relator hierarchies</em>.</p>
+      <p>In 2026 I was awarded a Ramón y Cajal fellowship, which I'll take up at ICMAT in 2027.</p>
+    </div>
+
+    <ul class="timeline" style="margin-top:26px;">
+      <li class="current"><div class="yr">2027 –</div><p class="role">Ramón y Cajal Research Fellow, ICMAT</p></li>
+      <li><div class="yr">2024 – 2027</div><p class="role">Severo Ochoa Postdoctoral Research Associate, ICMAT</p></li>
+      <li><div class="yr">2022 – 2024</div><p class="role">Postdoctoral Researcher, University of Oxford (Dawid Kielak's group)</p></li>
+      <li><div class="yr">2018 – 2022</div><p class="role">PhD in Mathematics, University of Warwick — <em>One-relator hierarchies</em>, supervised by Saul Schleimer</p></li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Research interests</h2>
+    <p class="interests">Coherence<span class="sep">·</span>compact cores<span class="sep">·</span>splittings<span class="sep">·</span>L<sup>2</sup>-invariants<span class="sep">·</span>group (co)homology<span class="sep">·</span>free groups<span class="sep">·</span>one-relator groups<span class="sep">·</span>hyperbolic groups<span class="sep">·</span>quasi-convex subgroups</p>
+
+    <h2 style="margin-top:34px;">Preprints</h2>
+    <ol class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2607.07496" target="_blank" rel="noopener">Finite complete rewriting systems for graphs of free groups with applications to free-by-cyclic, one-relator, and three-manifold groups</a></div>
+        <div class="pub-meta">with Robert Gray · 2026 · arXiv:2607.07496</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2603.16763" target="_blank" rel="noopener">Coherent RFRS groups</a></div>
+        <div class="pub-meta">appendix to an article by Sam P. Fisher and Pablo Sánchez-Peralta · 2026 · arXiv:2603.16763</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2512.12635" target="_blank" rel="noopener">The finitely generated intersection property in fundamental groups of graphs of groups</a></div>
+        <div class="pub-meta">with Jordi Delgado, Jone Lopez de Gamiz Zearra, Mallika Roy, Pascal Weil · 2025 · arXiv:2512.12635</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2510.23518" target="_blank" rel="noopener">Group pairs, coherence and Farrell–Jones Conjecture for K<sub>0</sub></a></div>
+        <div class="pub-meta">with Andrei Jaikin-Zapirain, Pablo Sánchez-Peralta · 2025 · arXiv:2510.23518</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2510.03145" target="_blank" rel="noopener">The geometry of subgroups of mapping tori of free groups</a></div>
+        <div class="pub-meta">2025 · arXiv:2510.03145</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2508.04362" target="_blank" rel="noopener">Pullbacks and intersections in categories of graphs of groups</a></div>
+        <div class="pub-meta">with Jordi Delgado, Jone Lopez de Gamiz Zearra, Mallika Roy, Pascal Weil · 2025 · arXiv:2508.04362</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2501.18306" target="_blank" rel="noopener">The theory of one-relator groups: history and recent progress</a></div>
+        <div class="pub-meta">with Carl-Fredrik Nyberg-Brodda · chapter in <em>Recent Progress in Mathematics</em>, KIAS Springer Ser. Math. · arXiv:2501.18306</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2412.17057" target="_blank" rel="noopener">Lifting relations in right orderable groups</a></div>
+        <div class="pub-meta">accepted, J. Lond. Math. Soc. · arXiv:2412.17057</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2108.10814" target="_blank" rel="noopener">On the intersections of finitely generated subgroups of free groups: reduced rank to full rank</a></div>
+        <div class="pub-meta">2021 · arXiv:2108.10814</div>
+      </li>
+    </ol>
+
+    <h2 style="margin-top:34px;">Publications</h2>
+    <ol class="pub-list" start="10">
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2510.10178" target="_blank" rel="noopener">Embedding finitely generated free-by-cyclic groups in {finitely generated free}-by-cyclic groups</a></div>
+        <div class="pub-meta">Int. Math. Res. Not. 2026 (2026), no. 4 · arXiv:2510.10178</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2407.09272" target="_blank" rel="noopener">Residually rationally solvable one-relator groups</a></div>
+        <div class="pub-meta">Bull. Lond. Math. Soc. 58 (2025), no. 1 · arXiv:2407.09272</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2303.05976" target="_blank" rel="noopener">On the coherence of one-relator groups and their group algebras</a></div>
+        <div class="pub-meta">with Andrei Jaikin-Zapirain · Ann. of Math. (2) 201 (2025), no. 3, 909–959 · arXiv:2303.05976</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2303.15907" target="_blank" rel="noopener">Group rings of three-manifold groups</a></div>
+        <div class="pub-meta">with Dawid Kielak · Proc. Amer. Math. Soc. 152 (2024), no. 5, 1939–1946 · arXiv:2303.15907</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2302.11500" target="_blank" rel="noopener">Virtually free-by-cyclic groups</a></div>
+        <div class="pub-meta">with Dawid Kielak · Geom. Funct. Anal. 34 (2024), no. 5, 1580–1608 · arXiv:2302.11500</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2211.04371" target="_blank" rel="noopener">Hyperbolic one-relator groups</a></div>
+        <div class="pub-meta">Canad. J. Math. 78 (2026), no. 1, 35–61 · arXiv:2211.04371</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2202.11324" target="_blank" rel="noopener">One-relator hierarchies</a></div>
+        <div class="pub-meta">Duke Math. J. 174 (2025), no. 4, 747–802 · arXiv:2202.11324</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://arxiv.org/abs/2110.10055" target="_blank" rel="noopener">The fully compressed subgroup membership problem</a></div>
+        <div class="pub-meta">J. Algebra 628 (2023), 562–583 · arXiv:2110.10055</div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="talks">
+    <h2>Selected invited talks</h2>
+    <div class="talk-list">
+      <div class="talk"><div class="when">Jul 2026</div><div class="what"><strong>Arithmetic Groups, High-dimensional Expanders and L²-invariants</strong> <span>— Brin Mathematics Research Center</span></div></div>
+      <div class="talk"><div class="when">Jun 2026</div><div class="what"><strong>Young Geometric Group Theory XIV</strong> <span>— KIAS</span></div></div>
+      <div class="talk"><div class="when">Jun 2026</div><div class="what"><strong>Sapir Distinguished Lecture, GAGTA</strong> <span>— CUNY</span></div></div>
+      <div class="talk"><div class="when">Aug 2025</div><div class="what"><strong>Algebraic and Analytic Methods in Group Theory</strong> <span>— IMPAN, Warsaw</span></div></div>
+      <div class="talk"><div class="when">Aug 2025</div><div class="what"><strong>Operators, Graphs, Groups Colloquium</strong> <span>— Isaac Newton Institute</span></div></div>
+      <div class="talk"><div class="when">Jul 2025</div><div class="what"><strong>JAE School of Mathematics</strong> <span>— ICMAT</span></div></div>
+      <div class="talk"><div class="when">Jun 2025</div><div class="what"><strong>Geometric Group Theory and Related Topics</strong> <span>— Peking University</span></div></div>
+      <div class="talk"><div class="when">Jan 2025</div><div class="what"><strong>RSME 7th Congress of Young Researchers</strong> <span>— University of the Basque Country</span></div></div>
+    </div>
+
+    <details class="more">
+      <summary>Show earlier talks (2021–2024)</summary>
+      <div class="talk-list" style="margin-top:12px;">
+        <div class="talk"><div class="when">Sep 2024</div><div class="what"><strong>Combinatorial Non-positive Curvature</strong> <span>— BIRS, Banff</span></div></div>
+        <div class="talk"><div class="when">May 2024</div><div class="what"><strong>Barcelona Weekend in Group Theory</strong> <span>— UPC</span></div></div>
+        <div class="talk"><div class="when">Apr 2024</div><div class="what"><strong>Groups, Topology and Applications in Gran Bilbao V</strong> <span>— UPV/EHU</span></div></div>
+        <div class="talk"><div class="when">Feb 2024</div><div class="what"><strong>GAGTA</strong> <span>— CIRM</span></div></div>
+        <div class="talk"><div class="when">Jun 2023</div><div class="what"><strong>Groups and Computation</strong> <span>— Stevens Institute of Technology</span></div></div>
+        <div class="talk"><div class="when">May 2023</div><div class="what"><strong>Geometry of Subgroups</strong> <span>— CRM, Montreal</span></div></div>
+        <div class="talk"><div class="when">May 2023</div><div class="what"><strong>NYGT event in memory of Gilbert Baumslag and Benjamin Fine</strong> <span>— CUNY</span></div></div>
+        <div class="talk"><div class="when">Oct 2022</div><div class="what"><strong>Groups and Geometry in the South East</strong> <span>— UCL</span></div></div>
+        <div class="talk"><div class="when">Sep 2022</div><div class="what"><strong>Modern Advances in Geometric Group Theory</strong> <span>— University of Manchester</span></div></div>
+        <div class="talk"><div class="when">Aug 2021</div><div class="what"><strong>World of Groupcraft</strong> <span>— online</span></div></div>
+      </div>
+    </details>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching and supervision</h2>
+    <p>In 2025 I taught the advanced algebra course on Geometric Group Theory at the Universidad Autónoma de Madrid. Between 2018 and 2022 I was a teaching assistant at the University of Warwick, across Discrete Mathematics, Algebra II, Geometry, Introduction to Topology and Algebraic Topology.</p>
+    <p>I have supervised Alba González González (MSc, Universidad Autónoma de Madrid, now a PhD student at Oxford) and Miguel Ángel Royo Miguel (JAE summer research student, Universidad de Zaragoza).</p>
+
+    <h2 style="margin-top:34px;">Minicourses</h2>
+    <div class="talk-list">
+      <div class="talk"><div class="when">Sep 2027</div><div class="what"><strong>TBD</strong> <span>— Ventotene International Workshop</span></div></div>
+      <div class="talk"><div class="when">Oct 2026</div><div class="what"><strong>TBD</strong> <span>— Shanghai Center for Mathematical Sciences, 8 hours</span></div></div>
+      <div class="talk"><div class="when">Jun 2026</div><div class="what"><strong>2-complexes with vanishing L²-Betti numbers</strong> <span>— ICMAT, 3 hours</span></div></div>
+      <div class="talk"><div class="when">Nov 2024</div><div class="what"><strong>One-relator groups and the coherence property</strong> <span>— KIAS (KOREA-GGT), 3 hours</span></div></div>
+      <div class="talk"><div class="when">Jul 2024</div><div class="what"><strong>Coherence, homological coherence and one-relator groups</strong> <span>— University of Hawaii, 9 hours</span></div></div>
+      <div class="talk"><div class="when">Apr 2024</div><div class="what"><strong>The coherence of one-relator groups</strong> <span>— Gran Bilbao V, UPV/EHU, 8 hours</span></div></div>
+    </div>
+  </section>
+
+  <section id="other-work">
+    <h2>Other work</h2>
+    <p>Slides from my minicourse <em>One-relator groups and the coherence property</em>, given at the KIAS workshop on One-Relator groups and other Aspects of GGT, are available <a href="https://raw.githubusercontent.com/MarcoLinton/marcolinton.github.io/main/_data/One-relator_groups_and_the_coherence_property.pdf" target="_blank" rel="noopener">here</a>.</p>
+    <p>My PhD thesis, <em>One-relator hierarchies</em>, can be found <a href="https://wrap.warwick.ac.uk/id/eprint/173085/" target="_blank" rel="noopener">here</a>.</p>
+    <p>During my PhD I also put together a <a href="database.html" target="_blank" rel="noopener">database of one-relator groups</a>.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="two-col">
+      <div>
+        <address>
+          marco.linton@icmat.es<br>
+          marcolinton.math@gmail.com<br><br>
+          Office 301<br>
+          Instituto de Ciencias Matemáticas<br>
+          Fuencarral–El Pardo<br>
+          28049 Madrid, Spain
+        </address>
+      </div>
+      <div>
+        <address>
+          <a href="https://arxiv.org/a/linton_m_1" target="_blank" rel="noopener">arXiv author page</a><br>
+          <a href="https://scholar.google.com/citations?user=deUy_rcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <section id="more">
+    <h2>Some pictures</h2>
+    <div class="photo-grid">
+      <a href="images/talk-board.jpg" target="_blank"><img src="images/talk-board.jpg" alt="Marco Linton lecturing at a blackboard"></a>
+      <a href="images/talk-slide.jpg" target="_blank"><img src="images/talk-slide.jpg" alt="Marco Linton presenting slides to an audience"></a>
+      <a href="images/conference.jpg" target="_blank"><img src="images/conference.jpg" alt="Marco Linton with a colleague at a conference"></a>
+      <a href="images/climb-building.jpg" target="_blank"><img src="images/climb-building.jpg" alt="Marco Linton climbing a large concrete wall above Madrid"></a>
+      <a href="images/climb-rock1.jpg" target="_blank"><img src="images/climb-rock1.jpg" alt="Marco Linton rock climbing outdoors"></a>
+      <a href="images/climb-rock2.jpg" target="_blank"><img src="images/climb-rock2.jpg" alt="Marco Linton rock climbing, mid-route"></a>
+      </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Marco Linton</div>
+</footer>
+
+</body>
+</html>
